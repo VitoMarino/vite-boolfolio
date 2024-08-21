@@ -2,7 +2,6 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-import ProjectCard from './components/ProjectCard.vue';
 
 export default {
   name: '',
@@ -10,7 +9,6 @@ export default {
     AppHeader,
     AppMain,
     AppFooter,
-    ProjectCard
   }
 }
 </script>
@@ -18,7 +16,6 @@ export default {
 <template>
 <AppHeader/>
 <AppMain/>
-<ProjectCard/>
 <AppFooter/>
 </template>
 
