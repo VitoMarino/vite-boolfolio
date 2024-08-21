@@ -1,5 +1,9 @@
 @use '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-body{
-    background-color: goldenrod;
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
