@@ -4,7 +4,6 @@ import ProjectList from '../components/ProjectList.vue';
 export default {
     data() {
         return {
-
         }
     },
     components: {

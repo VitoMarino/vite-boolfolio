@@ -7,6 +7,7 @@ import PageHome from './pages/PageHome.vue';
 import PageProject from './pages/PageProject.vue';
 import PageAbout from './pages/PageAbout.vue';
 import Error404 from './pages/errors/Error404.vue';
+import PageProjectCard from './pages/PageProjectCard.vue';
 
 //* Con la costante stiamo salvando i dati di Vue Router
 const router = createRouter({
@@ -38,6 +39,11 @@ const router = createRouter({
             path: '/404',
             name: '404',
             component: Error404
+        },
+        {
+            path: '/project/:id ',
+            name: 'single-project',
+            component: PageProjectCard
         }
     ]
 });
