@@ -2,7 +2,20 @@
 export default {
     data() {
         return {
-
+            navLinkNames :[
+                {
+                    label: 'Homepage',
+                    name: 'home'
+                },
+                {
+                    label: 'Projects',
+                    name: 'project'
+                },
+                {
+                    label: 'About',
+                    name: 'about'
+                }
+            ]
         }
     }
 }
@@ -12,11 +25,17 @@ export default {
     <header>
         <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand">VUE + LARAVEL</a>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
-                </form>
+                <ul class="d-flex align-items-center">
+                    <li class="navbar-brand">
+                        VUE + LARAVEL
+                    </li>
+
+                    <li class="ms-3" v-for="navItem in navLinkNames">
+                        <router-link :to="{name: navItem.name}" >
+                            {{ navItem.label }}
+                        </router-link>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
