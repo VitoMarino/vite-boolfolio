@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <h1>
+    <h1 class="text-center p-3">
         Home
     </h1>
 </template>

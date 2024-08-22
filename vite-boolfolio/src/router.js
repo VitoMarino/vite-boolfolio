@@ -6,6 +6,7 @@ import { createRouter, createWebHistory} from 'vue-router';
 import PageHome from './pages/PageHome.vue';
 import PageProject from './pages/PageProject.vue';
 import PageAbout from './pages/PageAbout.vue';
+import Error404 from './pages/errors/Error404.vue';
 
 //* Con la costante stiamo salvando i dati di Vue Router
 const router = createRouter({
@@ -32,6 +33,11 @@ const router = createRouter({
             path: '/about',
             name: 'about',
             component: PageAbout
+        },
+        {
+            path: '/404',
+            name: '404',
+            component: Error404
         }
     ]
 });
