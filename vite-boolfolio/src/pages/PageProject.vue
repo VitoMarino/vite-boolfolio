@@ -14,10 +14,16 @@ export default {
 </script>
 
 <template>
-    <h1>
-        Project
+    <div>
+        <h1 class="text-center p-3">
+        Projects
     </h1>
-    <ProjectList />
+        <ProjectList/>
+    </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+div{
+    background-color: #c6dafc;
+}
+</style>
