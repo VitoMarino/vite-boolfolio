@@ -15,6 +15,7 @@ export default {
                 .then((response) => {
                     console.log(response);
                     this.project = response.data.result;
+                    console.log(this.project)
                 })
                 .catch((error) => {
                     this.$router.push({name: '404'});
